@@ -12,5 +12,5 @@ elif last_digit < 6:
     second_string = f"and is less then 6 and not 0"
 elif last_digit > 5:
     second_string = f"and is greater then 5"
-print(f"last digit of {number:d} is {last_digit:d} {second_string:d}")
- 
+# print(f"last digit of {number:d} is {last_digit:d} {second_string:d}")
+print("Last digit of", number, "is", last_digit, second_string)
