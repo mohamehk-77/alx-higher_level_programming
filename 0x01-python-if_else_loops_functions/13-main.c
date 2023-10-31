@@ -2,7 +2,9 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 /**
  * main - check the code for
  *
