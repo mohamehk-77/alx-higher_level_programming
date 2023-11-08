@@ -5,4 +5,3 @@ def square_matrix_simple(matrix=[]):
         for y in range(len(matrix[i])):
             new_matrix[i][y] = matrix[i][y] ** 2
     return new_matrix
-           
