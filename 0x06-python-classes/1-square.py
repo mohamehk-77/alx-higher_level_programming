@@ -13,5 +13,10 @@ class Square:
     """
 
     def __init__(self, size):
-        """Instantiation with size (no type/value verification)"""
+        """
+       Initializes square
+
+       Attributes:
+           size: size of a side of square
+       """
         self.__size = size
