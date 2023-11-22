@@ -1,0 +1,1 @@
+**## In Python Everything Is Object**
