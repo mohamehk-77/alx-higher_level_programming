@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """
-This script is used to create a new user in the database. The user's information will be stored in the 'users' table of the 1-Square
+Module 1-square
+Defines class Square with private attribute size
 """
 
 
 class Square:
     """
-    Class Square
+    class Square definition
 
-    Attributes:
-    - size: size of the side of the square
+    Args:
+        size : size of a side in square
     """
 
     def __init__(self, size):
