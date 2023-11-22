@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    integer_find = 0
-    try:
-        for y in range(x):
-            if type(my_list[y]) is int:
-                print("{:d}".format(my_list[y]), end="")
-                integer_find += 1
-        print()
-        return integer_find
-    except IndexError:
-        print()
-        return integer_find
+    counter = 0
+    counter2 = 0
+    for ele in my_list:
+        try:
+            if (counter >= x):
+                break
+            print("{:d}".format(ele), end="")
+            counter += 1
+        except (ValueError, TypeError):
+            counter2 += 1
+    if (counter+counter2 < x):
+        raise IndexError("list index out of range")
+    print("".format())
+    return counter
