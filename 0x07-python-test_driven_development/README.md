@@ -4,7 +4,7 @@
 >> doctest
 >> TDD
 
-<p> log ;
+<p>
 <ul class="bullet">
 <li><a href="#1" name="1"><span class="fa fa-link"></span></a>Test-Driven
 Development (TDD)</li>
