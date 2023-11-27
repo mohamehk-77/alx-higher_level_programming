@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-define class Rectangle 
-    
+Empty class Rectangle
 """
 
 
 class Rectangle:
     """
-    empty class
-
+    Empty class Rectangle
     """
     pass
