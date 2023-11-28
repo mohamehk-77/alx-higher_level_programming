@@ -1,0 +1,35 @@
+# Test Case 1: Print a square with size 4
+>>> print_square = __import__('4-print_square').print_square
+>>> print_square(4)
+####
+####
+####
+####
+
+# Test Case 2: Print a square with size 10
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+# Test Case 3: Print a square with size 0
+>>> print_square(0)
+ 
+# Test Case 4: Print a square with size 1
+>>> print_square(1)
+#
+
+# Test Case 5: Try to print a square with size -1 (Expecting ValueError)
+>>> try:
+...     print_square(-1)
+... except Exception as e:
+...     str(e)
+'size must be >= 0'
+

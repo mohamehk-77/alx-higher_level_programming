@@ -1,16 +1,21 @@
-#Write a function that prints My name is <first name> <last name>
->>> say_my_name = __import__('3-say_my_name').say_my_name
-
+# Test Case 1: Concatenate two strings
 >>> say_my_name("Meow", "hhh")
 My name is Meow hhh
 
->>> say_my_name("Hainzen", "Berg")
-My name is Hainzen Berg
+# Test Case 2: Concatenate two other strings
+>>> say_my_name("Hainan", "Berg")
+My name is Hainan Berg
 
->>> say_my_name("Hainzen", 55)
-Traceback (most recent call last):
-TypeError: last_name must be a string
+# Test Case 3: Attempt to pass an integer as the last_name (Expecting TypeError)
+>>> try:
+...     say_my_name("Hainan", 55)
+... except Exception as e:
+...     str(e)
+'last_name must be a string'
 
->>> say_my_name(55, "Berg")
-Traceback (most recent call last):
-TypeError: first_name must be a string
+# Test Case 4: Attempt to pass an integer as the first_name (Expecting TypeError)
+>>> try:
+...     say_my_name(55, "Berg")
+... except Exception as e:
+...     str(e)
+'first_name must be a string'
