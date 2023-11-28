@@ -1,6 +1,9 @@
 ## 0x09. Python - Everything is object
 In the previous section, we learned that everything in Python is an Object and every value has a type. Now let's explore how objects work
+
 ![Alt text](image.png)
+
+
 <p> python <p>
 <hr /> object
 - everything in python is an object, including the variables and data types
