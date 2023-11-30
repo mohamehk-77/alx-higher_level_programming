@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Rectangle class
+Rectangle Class.
 """
 
 
@@ -20,7 +20,10 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """width setter"""
-        self._validate_non_negative_integer("width", value)
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -31,32 +34,35 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Height setter"""
-        self._validate_non_negative_integer("height", value)
-        self.__height = value
-
-    def _validate_non_negative_integer(self, attribute, value):
-        """Validate if the value is a non-negative integer"""
         if not isinstance(value, int):
-            raise TypeError(f"{attribute} must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError(f"{attribute} must be >= 0")
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
         """calculate and return the area of the rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
-     """Define perimeter"""
-     return (
-        2 * (self.__width + self.__height)
-        if self.__width and self.__height
-        else 0
-    )
+        """Define perimeter"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return 2 * (self.__width + self.__height)
 
     def __str__(self):
         """Define str"""
-        return "\n".join(["#" * self.__width for _ in range(self.__height)])
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            result = ""
+        for i in range(self.__height):
+            result += "#" * self.__width
+            if i < self.__height - 1:
+                result += "\n"
+        return result
 
     def __repr__(self):
         """Define repr"""
-        return f"Rectangle({self.__width}, {self.__height})"
+        return "Rectangle({}, {})".format(self.__width, self.__height)
