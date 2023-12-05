@@ -5,7 +5,7 @@
 - Use conditional statements to control program flow based on user inputs
 - Create a simple calculator that can perform addition, subtraction, multiplication, division operations.
 ## Python Parse JSON String
-- Python provides json module for parsing JSON data. The `json` module has two main functions - `dumps()` (to convert python object into JSON
+- Python provides json module for parsing JSON data. The `json` module has two main functions - `dumps()` (to convert python object into JSON)
 
 - Python is an interpreted, high-level programming language designed to be highly readable and easy to understand. It has a syntax similar to English and supports object
 
