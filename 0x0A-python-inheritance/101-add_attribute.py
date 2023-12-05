@@ -3,7 +3,7 @@
 
 
 def add_attribute(obj, per, value):
-    """Adds an attribute to the given object with a specific permission and value."""
+    """Adds an attribute to the given object with a specific permission"""
 
     if not hasattr(obj, "__dict__"):
 
