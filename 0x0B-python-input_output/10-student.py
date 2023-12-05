@@ -13,7 +13,8 @@ class Student:
 
     def to_json(self, attrs=None):
         """Returns a dictionary"""
+
         if attrs is None:
             return self.__dict__
-        else:
-            return {mo: hamo for mo, hamo in self.__dict__.items() if mo in attrs}
+        return {key: self.__dict__[key]
+                for key in attrs if key in self.__dict__}
