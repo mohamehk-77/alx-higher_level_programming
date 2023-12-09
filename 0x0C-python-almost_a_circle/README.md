@@ -26,6 +26,6 @@
 - Name: Mohamed k.Khalid
 - Email: kmido9729@gmail.com
 - Country: Egypt
-- LinkedIn: @Midok85733357
+- LinkedIn: Mohamed K. kamal
 - GitHub: mohamehk-77
 - Twitter: @MidoK85733357
