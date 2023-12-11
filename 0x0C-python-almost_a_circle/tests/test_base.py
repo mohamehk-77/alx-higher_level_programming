@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """ unit test for bases """
 import unittest
-from models.square import Square
-from models.rectangle import Rectangle
 from models.base import Base
 
 
@@ -13,7 +11,7 @@ class BaseTestCase(unittest.TestCase):
         """
         Resets id
         """
-        Base._Base__nb_objects = 0
+        Base.reset_id()
 
     def test_base_task1(self):
         b1 = Base()
