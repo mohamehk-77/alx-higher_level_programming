@@ -4,7 +4,7 @@
 const fs = require('fs');
 const data = process.argv[3];
 try {
-    fs.writeFileSync(process.argv[2], data, 'utf-8');
+  fs.writeFileSync(process.argv[2], data, 'utf-8');
 } catch (err) {
-    console.error(err);
+  console.error(err);
 }
